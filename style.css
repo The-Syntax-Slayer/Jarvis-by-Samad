@@ -79,3 +79,42 @@
     font-size: 15px;
     margin-right: 20px;
 }
+
+/* Mobile-friendly styles */
+@media only screen and (max-width: 768px) {
+    .main .image-container .image img {
+        width: 250px; /* reduce image size on smaller screens */
+    }
+    .main .input {
+        width: 60vw; /* increase input width on smaller screens */
+    }
+    .main .input .talk {
+        width: 40px; /* reduce talk button size on smaller screens */
+        height: 40px;
+    }
+    .main .input .talk i {
+        font-size: 18px; /* reduce icon size on smaller screens */
+    }
+    .main .input .content {
+        font-size: 13px; /* reduce content font size on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main .image-container .image img {
+        width: 200px; /* further reduce image size on very small screens */
+    }
+    .main .input {
+        width: 80vw; /* further increase input width on very small screens */
+    }
+    .main .input .talk {
+        width: 30px; /* further reduce talk button size on very small screens */
+        height: 30px;
+    }
+    .main .input .talk i {
+        font-size: 15px; /* further reduce icon size on very small screens */
+    }
+    .main .input .content {
+        font-size: 11px; /* further reduce content font size on very small screens */
+    }
+}
